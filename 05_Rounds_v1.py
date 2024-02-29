@@ -73,3 +73,25 @@ while computer_points <=13 and user_points <= 13:
     computer_points += computer_move
     print(f"the computer rolled a {computer_move}. The computer"
           f" now has {computer_points}.")
+
+    print()
+    if user_points > computer_points:
+        result = "You are ahead."
+    else:
+        result = "the computer is ahead oh nooo!1!!"
+
+    print(f"***Round Update****: {result} ")
+    print(f"{user_points} \t | \t computer score: {computer_points}")
+
+# outside loop - double user points if they won and are eligible
+
+# show rounds results
+if user_points < computer_points:
+    print("buh you lost and no points "
+          "have been added to your total score. the computer's score has "
+          f" increased by {computer_points} points")
+
+# currently does not include double points!
+else:
+    print(f"buh you won the round and {user_points} points have "
+          f"been added to your score")
